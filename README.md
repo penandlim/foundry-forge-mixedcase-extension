@@ -23,10 +23,10 @@ Inconsistent behavior between name cases when compiling contracts in Solidity vi
 
 ### Compilation Details:
 
-1. Counter.sol is imported in Counter.t.sol and is thus compiled :smile:
-2. Counter2.Sol is imported in Counter2.t.sol and is thus compiled :smile:
-3. **Counter3.Sol exists in src but is not compiled! :disappointed:**
-4. Counter4.sol exists in src and is compiled :smile:
+1. `Counter.sol` is imported in `Counter.t.sol` and is thus compiled :smile:
+2. `Counter2.Sol` is imported in `Counter2.t.sol` and is thus compiled :smile:
+3. **`Counter3.Sol` exists in src without being imported by other contracts and is NOT compiled! :disappointed:**
+4. `Counter4.sol` exists in src without being imported by other contracts and is compiled :smile:
 
 As you can see, the file extension seems to matter when they are not imported. No error or warning message is shown, and the affected files are silently left out of compilation.
 
