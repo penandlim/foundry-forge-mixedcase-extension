@@ -29,3 +29,5 @@ Inconsistent behavior between name cases when compiling contracts in Solidity vi
 4. Counter4.sol exists in src and is compiled :smile:
 
 As you can see, the file extension seems to matter when they are not imported. No error or warning message is shown, and the affected files are silently left out of compilation.
+
+This behavior is also consistent in script or test folder.
